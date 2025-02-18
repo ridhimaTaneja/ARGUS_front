@@ -1,0 +1,145 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-image: url('/Users/ridhima.taneja/argus/background.jpeg'); /* Update the path to your image */
+  background-size: cover; /* Ensure the image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left:300px;
+}
+
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 1059px;
+  min-height: 700px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: calc(100vh - 40px);
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.23); /* Black with 23% transparency */
+}
+
+.dropdown {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-header-container {
+  display: flex;
+  align-items: center;
+  width: calc(100%);
+}
+
+.number-box {
+  width: 134px; /* Increased width */
+  height: 134px; /* Increased height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  border-radius: 5px;
+  color: black;
+  flex-shrink: 0;
+}
+
+.number-box.open {
+  background: #2E015D;
+  color: white;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 55px; /* Increased padding */
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+  flex-grow: 1;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.dropdown-content {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  width: calc(100% - 174px); /* Adjust width to account for the number box and margin */
+  margin-left: 154px; /* Align content below the dropdown header */
+  margin-right: 20px;
+}
+
+.subquestion {
+  margin-bottom: 20px;
+}
+
+.subquestion p {
+  margin: 0 0 5px 0;
+  display: inline-block;
+  margin-right: 20px;
+  color: black;
+}
+
+.dropdown-content label {
+  display: inline-block;
+  margin-right: 20px;
+  color: black;
+}
+
+.predict-button {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2E015D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.predict-button:hover {
+  background-color: #a075cf;
+}

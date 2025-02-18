@@ -1,7 +1,7 @@
 html, body, #root {
   height: 100%;
   margin: 0;
-  background-image: url('src/background.jpeg'); /* Update the path to your image */
+  background-image: url('src/bg.svg'); /* Update the path to your image */
   background-size: cover; /* Ensure the image covers the entire viewport */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   background-position: center; /* Center the image */
